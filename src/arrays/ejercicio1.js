@@ -41,3 +41,9 @@ const total = facturaTotal.reduce((a, b) => {
     return a + b
 })
 console.log(total)
+
+//realizando operación de factura(precio por cantidad) y devolviendo solo facturas con mas de 40
+
+const totalSimple = facturas.map(i => i.precio * i.cantidad).filter((element, index, array) => element > 40);
+
+console.log(totalSimple)

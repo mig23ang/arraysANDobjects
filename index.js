@@ -7,7 +7,7 @@ const words = [
     "piña",
     "bicicleta"
   ];
-  //acceder a una posicion del array
+  //acceder a una posición del array
   console.log(words[3]);
   
    
