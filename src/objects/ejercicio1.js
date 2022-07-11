@@ -43,11 +43,13 @@ const factura = {
     item2,
     item3,
     calcularTotal: function (descuento) {
-        const total = (this.item1.calcularTotal() + this.item2.calcularTotal() + this.item3.calcularTotal()) * descuento
+        const total = (this.item1.calcularTotal() + this.item2.calcularTotal() + this.item3.calcularTotal());
+        const descuen = (this.item1.calcularTotal() + this.item2.calcularTotal() + this.item3.calcularTotal()) * descuento;
+        console.log(total, "total", descuen)
         /*
         //* mala practica se podría sumar todo aca pero no es correcto
         const total = item1.cantidad * item1.precio * item1.impuesto + item2.cantidad * item2.precio * item2.impuesto + item3.cantidad * item3.precio * item3.impuesto*/
-        return total
+        return total - descuen
     }
 }
 console.log(factura.calcularTotal(0.15))
