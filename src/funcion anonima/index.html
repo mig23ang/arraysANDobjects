@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // que es una función anónima
+      //* es una función que no tiene nombre
+
+      function saludar(name) {
+        return `hola${name}`;
+      }
+      /*
+        function (name) {
+            alert(`${name}`)
+        } ("juan")
+    */
+
+      //para llamar la función la encerramos en paréntesis
+      (function (name) {
+        alert(`${name}`);
+      })("juan");
+      // para acceder a la función la metemos en una variable
+      const getFunction = function (name) {
+        alert(`hola${name}`);
+      };
+      getFunction("Carlos");
+
+      
+    </script>
+  </body>
+</html>

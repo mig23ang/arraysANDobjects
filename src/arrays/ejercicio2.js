@@ -29,7 +29,3 @@ console.log(quantity["quantity"])
 frutas.description = "description"
 console.log(frutas, "agregando")
 
-
-const persona = { nombre: "Juan" };
-persona.edad = 10;
-console.log(persona);
