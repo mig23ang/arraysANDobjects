@@ -51,7 +51,16 @@ bunny.showTask()
 /**
  * * se obtienen valores undefined por el concepto de clausura no es posible entrar a this.name que esta en un scope diferente
  */
-
+const bunny1 = {
+    name: "conejo",
+    tasks: ['speak', 'learn', 'teach'],
+    showTask: function () {
+        this.tasks.forEach(task => {
+            console.log(this.name + '  wants to: ' + task)
+        })
+    }
+}
+bunny1.showTask()
 /**
  * ! cual es la diferencia entre == o ===
  * que doble == no se fija en el tipo 
