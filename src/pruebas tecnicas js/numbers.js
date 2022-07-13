@@ -29,7 +29,31 @@ capicua(232)
 11) Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120.
 */
 
+/**
+ * Problema:
+rotar a la derecha m veces los elementos de un arreglo, donde m >= 0 y el arreglo tiene tamaño n, donde n >= 0. Note que no se pierden elementos en el arreglo.
 
+Ejemplo	Valor de m	Resultado
+arr[1,2,3,4]	m = 1	arr[4,1,2,3]
+arr[1,2,3,4]	m = 2	arr[3,4,1,2]
+arr[1,2,3,4]	m = 3	arr[2,3,4,1]
+arr[1,2,3,4]	m = 4	arr[1,2,3,4]
+
+ */
+
+let arr = [1, 2, 3, 4];
+const rotar = (array, n) => {
+    if (n > 4 || n <= 0) {
+        console.log("ingrese un valor entre 1 y 4")
+    }
+    for (let index = 0; index < n; index++) {
+        array.unshift(array[array.length - 1]);
+        array.pop();
+    }
+    return array
+}
+arr = rotar(arr, 2);
+console.log(arr)
 
 
 /*

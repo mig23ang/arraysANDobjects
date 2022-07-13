@@ -26,6 +26,6 @@ const quantity = frutas.find(element => element.name === "pera")
 console.log(quantity["quantity"])
 
 //! Agregar una descripción dentro del mismo arreglo
-frutas.description = "description"
+frutas.map(fruta => fruta.description = "description")
 console.log(frutas, "agregando")
 
